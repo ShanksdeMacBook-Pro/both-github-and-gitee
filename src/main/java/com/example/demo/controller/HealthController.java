@@ -14,4 +14,9 @@ public class HealthController {
     public String healthyCheck() {
         return "OK";
     }
+
+    @GetMapping(value = {"/gitee", "/github"})
+    public String push() {
+        return "Push origin branch both GitHub and Gitee";
+    }
 }
